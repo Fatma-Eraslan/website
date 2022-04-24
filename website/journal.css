@@ -1,0 +1,365 @@
+/* .container {
+    width:450px;
+    margin:auto;
+  } */
+  
+  .panel .pad {
+    padding: 0 15px; 
+  }
+  .panel.flip .action {
+    display: none;
+  }
+  
+  .panel {
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    position: relative;
+    display:inline-block;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+  }
+  .panel .front {
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    background: #fff;
+    
+    -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 15px rgba(0,0,0,0.1);
+    
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    
+    -o-transform: rotateX(0deg) rotateY(0deg);
+    -o-transform-style: preserve-3d;
+    -o-backface-visibility: hidden;
+    
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform-style: preserve-3d;
+    -ms-backface-visibility: hidden;
+   
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  .panel.flip .front {
+    z-index: 900;
+    background: #fff;
+    
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    
+    -moz-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  }
+        
+  .panel .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    background: #fff;
+    border:1px solid #000;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    
+    -o-transform: rotateY(-180deg);
+    -o-transform-style: preserve-3d;
+    -o-backface-visibility: hidden;
+    
+    -ms-transform: rotateY(-180deg);
+    -ms-transform-style: preserve-3d;
+    -ms-backface-visibility: hidden;
+    
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+   
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+          
+  .panel.flip .back {
+    z-index: 1000;
+    background: #fff;
+    
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  }
+  
+  .frontTitle {
+    padding-top:5px;
+    text-align:center;
+    font-family:'latoregular',arial;
+    font-size:18px;
+    color:#000;
+    height:45px;
+  }
+  
+  .frontLogo {
+      width:100%;
+      height:400px;
+      background-repeat:no-repeat;
+      background-position:center center;
+  }
+  
+  .k-1 {
+    background-image:url('img/dergi.jpg');
+   
+    background-size:280px 430px;
+  }
+  
+  .k-2 {
+   background-image:url('img/kafa2.jpg');
+        /* background-size:85% auto; */
+        background-size:280px 430px;
+    background-position:center center;
+  }
+  .k-3 {
+    background-image:url('img/kafa3.jpg');
+    background-size:280px 430px;
+   }
+  .k-4 {
+   background-image:url('img/kafa4.jpg');
+   background-size:280px 430px;
+  }
+  .k-5 {
+    background-image:url('img/kafa6.jpg');
+    background-size:280px 430px;
+   }
+   .k-6 {
+    background-image:url('img/kafa5.jpg');
+    background-size:280px 430px;
+   }
+    
+
+
+  .frontLocation {
+    padding-top:10px;
+    text-align:center;
+    color:#aaa;
+    font-family:'latoregular',arial;
+    font-size:18px;
+  }
+  
+  .backTitle {
+    padding:10px;
+     color:#000;
+    font-family:'latohairline',arial;
+    font-size:16px;
+    font-weight:bold;
+  }
+  
+  .backParagraph {
+     padding:10px;
+    padding-top:0;
+     color:#000;
+    font-family:'latoregular',arial;
+    font-size:14px;
+  }
+  
+  .backGoto {
+    padding:10px;
+    padding-top:0;
+    color:#06f;
+    font-family:'latoregular',arial;
+    font-size:14px;
+  }
+  
+  .backGoto a {
+    text-decoration:none;
+    color:#06f;
+    -webkit-transition:0.1s all linear;
+    -moz-transition:0.1s all linear;
+    -o-transition:0.1s all linear;
+    transition:0.1s all linear;
+  }
+  
+  .backGoto a:hover {
+    text-decoration:underline;
+    padding-left:15px;
+  }
+
+  .right{
+    position: relative;
+    right: -140px;
+ }
+ /*kafa end*/
+
+ /*abonelikler*/
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  background: whiteSmoke;
+  /* padding: 5%; */
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 550px) {
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card {
+  position: relative;
+  width: 28.33333%;
+  height: 550px;
+  margin: 1%;
+  background: whiteSmoke;
+  box-shadow: 1px 1px 5px #999;
+}
+@media (max-width: 815px) {
+  .card {
+    width: 48%;
+  }
+}
+@media (max-width: 550px) {
+  .card {
+    width: 100%;
+  }
+}
+.card__inner {
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+}
+.card__inner h2 {
+  color: white;
+  margin: 0;
+  padding: 30% 0;
+  text-shadow: 1px 1px 3px #000;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.card__inner h2 small {
+  font-style: italic;
+  display: inherit;
+}
+.card__buttons {
+  position: relative;
+  top:371px;
+  width: 100%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+.card__buttons a {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.card__buttons a:first-child {
+  background: #fff;
+  border-right: 1px solid #ccc;
+}
+.card__buttons a:last-child {
+  background: #F5CB5C;
+}
+.card__buttons a:hover {
+  color: #F5CB5C;
+  background: #000;
+}
+.card:hover .card__buttons {
+  -webkit-transform: translateY(-38px);
+          transform: translateY(-38px);
+}
+.card__tagline {
+  font-size: 1rem;
+  font-weight: 100;
+  position: relative;
+  top:-35px;
+}
+.card__icons {
+  margin: 0 0 50px;
+  padding: 0;
+  list-style: none;
+}
+.card__icons li {
+  display: inline-block;
+  padding: 0 10px 10px;
+}
+.card__icons .fa {
+  font-size: .8rem;
+}
+.card__icons .fa:before {
+  font-size: 1.2rem;
+  display: block;
+  padding-bottom: 5px;
+}
+.card p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.back-1{
+  background: url("img/kafa.jpg") no-repeat;
+  /* background-size: 100% 100%;  */
+  background-size: 460px 380px; 
+}
+.back-2{
+  background: url("img/ot.jpg") no-repeat;
+  background-size: 460px 380px; 
+}
